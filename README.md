@@ -8,4 +8,4 @@
 | задания по машине Тъюринга | до 23.09.26 | сделано |
 | отчёт по блок-схемам | до 22.09.26 | сдано |
 
-картинка<img width="320" height="320" alt="i" src="https://github.com/user-attachments/assets/652de687-33f7-42ef-be1c-aa68a2da953a" />
+<img width="320" height="320" alt="i" src="https://github.com/user-attachments/assets/652de687-33f7-42ef-be1c-aa68a2da953a" />
