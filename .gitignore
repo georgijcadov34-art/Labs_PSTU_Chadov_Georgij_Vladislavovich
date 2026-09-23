@@ -1,0 +1,16 @@
+# Результаты сборки
+main.exe
+*.exe
+*.ilk
+*.obj
+*.pdb
+*.o
+*.out
+
+# Каталоги сборки
+build/
+cmake-build-*/
+
+# Локальные настройки VS Code
+.vscode/ipch/
+.vscode/.browse.VC.db
