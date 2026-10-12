@@ -1,8 +1,11 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <windows.h>
 using namespace std;
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
     double a = 1000.0;
     double b = 0.0001;
 
@@ -16,7 +19,6 @@ int main() {
     double z = z1 + z2 + z3;
 
     double res = chis / z;
-    cout << res;
 
 
     float a1 = 1000.0;
@@ -37,3 +39,4 @@ int main() {
     return 0;
 
 }
+
