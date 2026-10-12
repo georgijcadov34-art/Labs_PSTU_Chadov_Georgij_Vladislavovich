@@ -26,7 +26,7 @@ int main() {
 
     float chis3 = pow(a+b, 5);
     float chis4 = pow(a, 5) + 5.0 * pow(a, 4) * b;
-    float chis5= chis2 - chis3;
+    float chis5= chis3 - chis4;
 
     float z4 = 10.0 * pow(a1, 3) * pow(b1, 2);
     float z5 = 10.0 * pow(a1, 2) * pow(b1, 3);
