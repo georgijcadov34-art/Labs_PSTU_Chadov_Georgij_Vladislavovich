@@ -18,14 +18,14 @@ int main() {
     int res = n1 - (--m1);
     cout << "1) n - (--m) = " << res << endl;
 
-    cout << "2) Проверка ";
+    cout << "2) Проверка: ";
     if (m2++ > --n2) {
         cout << "Истина" << endl;
     } else {
         cout << "Ложь" << endl;
     }
 
-    cout << "3) Проверка ";
+    cout << "3) Проверка: ";
     if (++n3 < m3--) {
         cout << "Истина" << endl;
     } else {
