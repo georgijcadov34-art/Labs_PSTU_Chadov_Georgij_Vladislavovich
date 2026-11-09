@@ -30,6 +30,6 @@ int main()
         }
     }
     
-    cout << "answer: \n" << ar;
+    cout << "answer: " << ar;
     return 0;
 }

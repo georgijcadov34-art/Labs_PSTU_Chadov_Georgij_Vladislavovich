@@ -2,12 +2,37 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "type": "shell",
+            "label": "cl.exe build and run active file",
+            "command": "cl",
+            "args": [
+                "/EHsc",
+                "${file}",
+                "&&",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
             "type": "cppbuild",
             "label": "C/C++: cl.exe build active file",
-            "command": "cmd.exe",
+            "command": "cl.exe",
             "args": [
-                "/d", "/c",
-                "\"C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\VsDevCmd.bat\" && cl.exe /Zi /EHsc /nologo /Fe\"${fileDirname}\\${fileBasenameNoExtension}.exe\" \"${file}\""
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}"
             ],
             "options": {
                 "cwd": "${fileDirname}"
