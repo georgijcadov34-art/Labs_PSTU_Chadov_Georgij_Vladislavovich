@@ -5,7 +5,7 @@ int main() {
     int a[] = {64, 34, 25, 12, 22, 11, 90, 5};
     int n = 8;
     
-    cout << "Было: ";
+    cout << "before: ";
     for (int i = 0; i < n; i++) {
         cout << a[i] << " ";
     }
@@ -22,7 +22,7 @@ int main() {
             a[j] = temp;
         }
     }
-    cout << "Стало: ";
+    cout << "after: ";
     for (int i = 0; i < n; i++) {
         cout << a[i] << " ";
     }

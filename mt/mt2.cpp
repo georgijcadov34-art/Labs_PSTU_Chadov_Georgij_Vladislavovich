@@ -7,7 +7,7 @@ int main()
     char ar[] = {' ', '1', '1', '+', '1', '1', ' ', '\0'};
     char al[] = {' ', '1', '+'};
 
-    while (h) 
+    while (h && ar[pos] != '\0') 
     {
         if (h == 1) 
         {
@@ -26,7 +26,9 @@ int main()
         {
             if (ar[pos] == al[1]) 
             {
-                ar[pos - 1] = al[1];
+                if (pos > 0) { 
+                    ar[pos - 1] = al[1];
+                }
                 ar[pos] = al[0];
                 pos += 1;
             }
@@ -37,6 +39,5 @@ int main()
         }
     }
     
-    cout << "answer: " << ar;  
+    cout << "answer: " << ar << endl;  
     return 0;
-}
