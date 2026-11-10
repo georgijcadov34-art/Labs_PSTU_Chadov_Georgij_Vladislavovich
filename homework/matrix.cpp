@@ -2,7 +2,7 @@
 using namespace std;
 
 int main () {
-    cout << "введите колличество строк и столбцов(до 10)";
+    cout << "введите колличество строк и столбцов(до 10)" << endl;
     int m,n;
     cin >> m >> n;
     int mat[10][10];
@@ -12,7 +12,7 @@ int main () {
         }
     }
 
-    cout << "исходная матрица";
+    cout << "исходная матрица" << endl;
 
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
