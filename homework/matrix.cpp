@@ -2,23 +2,33 @@
 using namespace std;
 
 int main () {
-    int mat[3][3];
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
+    cout << "введите колличество строк и столбцов(до 10)";
+    int m,n;
+    cin >> m >> n;
+    int mat[10][10];
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
             mat[i][j] = rand() / 101 - 50;
         }
-    }    
-    // for (int i = 0; i < 3; i++) {
-    //     for (int j = 0; j < 3; j++) {
-    //         cout << mat[i][j] << " ";
-    //     }
-    //     cout << endl;
-    // }
-    // return 0;
+    }
+
+    cout << "исходная матрица";
+
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            cout << mat[i][j] << " ";
+        }
+        cout << endl;
+    }
+
     bool pr = true;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 1; j++) {
-            if (mat[i][j] <= 0 && mat[i][j+1] <= 0 && mat[i][j+2] <= 0) {
+    for (int i = 0; i < m; i++) {
+        int k = 0;
+        for (int j = 0; j < n; j++) {
+            if (mat[i][j] < 0) {
+                k++;
+            }
+            if (k == n){ 
                 pr = false;
             }
         }
